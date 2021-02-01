@@ -35,8 +35,7 @@ Given the potential seasonality of the data sources, I checked if our time serie
 * Applied the SARIMAX model that incorporates seasonality as well as exogenous data.
 * First tried incorporating the MOVE Index which displayed a modest improvement in the error metric.
 * Second I tested out the SARIMAX model with the Primary Dealer dataset.  
-![alt text](images/fivol_dealer_exog.png)
-
+![alt text](images/fivol_dealer_exog_update.png)
 
 ### Model Performance
 Applied the comparison metric of the root mean square percentage error (RMSPE):
