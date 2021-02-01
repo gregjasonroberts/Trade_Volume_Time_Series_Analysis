@@ -17,7 +17,8 @@ Packages: pandas, numpy, statsmodels, sklearn, matplotlib, pmdarima
 ### Data Cleaning
 * Comparing internal trading volumes to that of the Primary Dealer activity as reported by the NY Fed.  That series is weekly and reported on Wednesdays of each week.  All other daily datasets were resampled accordingly.
 * A dataframe was built for each product:  a) Internal Trading Volumes, b) MOVE Index(US Treasury volatility index), c) Primary Dealer Volumes
-<img src="images/fivol_dealer.png?raw=true"/>
+
+![alt text](images/fivol_dealer.png)
 <img src="images/fivol_move.png?raw=true"/>
 
 ### EDA
@@ -42,6 +43,7 @@ Applied the comparison metric of the root mean square percentage error (RMSPE):
 * SARIMAX with no exogenous regressors:  23%
 * SARIMAX with exog=MOVE Index:  16%
 * SARIMAX with exog =Primary Dealers: 11%
+
 ![alt text](images/fivol_forecast.png)
 
 
