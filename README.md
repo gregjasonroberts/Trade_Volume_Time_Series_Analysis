@@ -18,7 +18,7 @@ Packages: pandas, numpy, statsmodels, sklearn, matplotlib, pmdarima
 * Comparing internal trading volumes to that of the Primary Dealer activity as reported by the NY Fed.  That series is weekly and reported on Wednesdays of each week.  All other daily datasets were resampled accordingly.
 * A dataframe was built for each product:  a) Internal Trading Volumes, b) MOVE Index(US Treasury volatility index), c) Primary Dealer Volumes
 
-![alt text](images/fivol_dealer (1).png)
+![alt text](images/fivol_dealer.png)
 <img src="images/fivol_move.png?raw=true"/>
 
 ### EDA
@@ -35,7 +35,7 @@ Given the potential seasonality of the data sources, I checked if our time serie
 * Applied the SARIMAX model that incorporates seasonality as well as exogenous data.
 * First tried incorporating the MOVE Index which displayed a modest improvement in the error metric.
 * Second I tested out the SARIMAX model with the Primary Dealer dataset.  
-![alt text](images/fivol_dealer_exog (1).png)
+![alt text](images/fivol_dealer_exog.png)
 
 
 ### Model Performance
